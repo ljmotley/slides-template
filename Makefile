@@ -14,7 +14,7 @@ input/:
 slides.pdf: slides.tex $(slides_sections) $(slides_inputs)
 	#module load texlive
 	pdflatex -draftmode $<
-	bibtex slides.aux
+	#bibtex slides.aux
 	pdflatex -draftmode $<
 	pdflatex $<
 	rm slides.log slides.aux slides.out slides.toc
